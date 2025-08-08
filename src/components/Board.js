@@ -1,6 +1,3 @@
-import React from 'react';
-
-
 const Board = ({ board, handleCellClick, handleRightClick }) => (
     <div className="Board">
         {board.map((row, i) => (

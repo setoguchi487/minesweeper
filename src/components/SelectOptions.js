@@ -1,5 +1,3 @@
-import React from 'react';
-
 const SelectOptions = ({ difficulty, setDifficulty}) => (
     <div className="SelectOptions">
         <label>Difficulty: </label>

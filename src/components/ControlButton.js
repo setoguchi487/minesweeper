@@ -1,5 +1,3 @@
-import React from 'react';
-
 const ControlButton = ({ gameStarted, startGame }) => (
     <div className="ControlButton">
         <button onClick={startGame}>

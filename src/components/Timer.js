@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Timer =({ seconds, flags }) => (
     <div className="Timer">
         <span>Time⏱️: {seconds}s</span>
