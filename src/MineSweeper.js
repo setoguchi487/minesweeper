@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import {useEffect, useState} from 'react';
 import './Styles.css';
 import GamingHeader from './components/GamingHeader';
 import Timer from './components/Timer';
