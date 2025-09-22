@@ -74,7 +74,6 @@ export const MineSweeper = () => {
       <Timer seconds={seconds} flags={flags} />
       <ControlButton 
         gameStarted={gameStarted}
-        gameOver={gameOver}
         gameCleared={gameCleared}
         startGame={startGame}
       />
