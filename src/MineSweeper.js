@@ -21,7 +21,7 @@ export const MineSweeper = () => {
   const [difficulty, setDifficulty] = useState('easy');
   const [statusMessage, setStatus] = useState("Let's Play");
   const [flags, setFlags] = useState(0);
-  const [gameCleared, setGameCleared] = useState(false);
+  const [, setGameCleared] = useState(false); //9/22修正:GameClearedフラグの削除
   
 //初期設定
   const startGame = () => {
@@ -74,8 +74,7 @@ export const MineSweeper = () => {
       <Timer seconds={seconds} flags={flags} />
       <ControlButton 
         gameStarted={gameStarted}
-        gameCleared={gameCleared}
-        startGame={startGame}
+        startGame={startGame} //9/22gameOverフラグの削除
       />
       <SelectOptions difficulty={difficulty} setDifficulty={setDifficulty}/>
       <Board board={board} handleCellClick={handleCellClick} handleRightClick={handleRightClick }/>
