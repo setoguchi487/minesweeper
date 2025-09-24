@@ -21,7 +21,7 @@ export const MineSweeper = () => {
   const [difficulty, setDifficulty] = useState('easy');
   const [statusMessage, setStatus] = useState("Let's Play");
   const [flags, setFlags] = useState(0);
-  const [, setGameCleared] = useState(false); //9/22修正:GameClearedフラグの削除
+  //const [, setGameCleared] = useState(false); //9/22修正:GameClearedフラグの削除
   
 //初期設定
   const startGame = () => {
@@ -34,7 +34,6 @@ export const MineSweeper = () => {
     setSeconds(0);
     setStatus("Let's Play")
     setFlags(mines);
-    setGameCleared(false);
   };
 
   useEffect(() => {
@@ -57,7 +56,7 @@ export const MineSweeper = () => {
 
   const handleCellClick = (cell) => {
     onCellClick({
-      cell,board,setBoard,gameStarted,gameOver,setGameOver,setTimerActive,setStatus,setGameCleared,
+      cell,board,setBoard,gameStarted,gameOver,setGameOver,setTimerActive,setStatus,
     });  
   };
 

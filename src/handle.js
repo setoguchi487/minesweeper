@@ -37,7 +37,7 @@ export const  handleCellClick = ({
     setGameOver,
     setStatus,
     setTimerActive,
-    setGameCleared,
+    //setGameCleared,//setGameClearedの削除2025/9/24
 }) => {
     if (!gameStarted || gameOver || cell.isRevealed) return;
     console.log("Clicked cell:", cell);
@@ -72,7 +72,7 @@ export const  handleCellClick = ({
       setTimerActive(false);
       setStatus("Game Clear!");
       setGameOver(true);
-      setGameCleared(true);
+      //setGameCleared(true);
     }
 
     
@@ -80,7 +80,6 @@ export const  handleCellClick = ({
 
 export const handleRightClick = ({
   e,
-  board,
   setBoard,
   x,
   y,
