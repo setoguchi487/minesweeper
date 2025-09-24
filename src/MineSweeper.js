@@ -21,7 +21,7 @@ export const MineSweeper = () => {
   const [difficulty, setDifficulty] = useState('easy');
   const [statusMessage, setStatus] = useState("Let's Play");
   const [flags, setFlags] = useState(0);
-  //const [, setGameCleared] = useState(false); //9/22修正:GameClearedフラグの削除
+  //9/24修正:GameClearedフラグの削除
   
 //初期設定
   const startGame = () => {
